@@ -80,8 +80,8 @@
 
                 ?>
 
-                <a href="http://www.jtpedu-lab.com">To:index(S3)</a><br>
-                <a href="http://webapp.jtpedu-lab.com">To:Application-Server(EC2)</a><br>
+                <a href="https://www.jtpedu-lab.com">To:index(S3)</a><br>
+                <a href="https://webapp.jtpedu-lab.com">To:Application-Server(EC2)</a><br>
                 <a href="./userlist.php">To:User-List(PHP)</a><br>
         </body>
 </html>
