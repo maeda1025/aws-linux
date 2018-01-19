@@ -7,6 +7,8 @@
 <body>
 
 <?php
+	print $_SERVER['SERVER_ADDR'];
+	print <br>;
 
     print('セッションIDを表示します。<br>');
     print($_COOKIE["login"].'<br>');
