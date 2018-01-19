@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
     session_start();
 ?>
 
@@ -9,10 +9,10 @@
 <?php
 
     if (!isset($_COOKIE["PHPSESSID"])){
-        print('‰‰ñ‚Ì–K–â‚Å‚·BƒZƒbƒVƒ‡ƒ“‚ðŠJŽn‚µ‚Ü‚·B');
+        print('åˆå›žã®è¨ªå•ã§ã™ã€‚ã‚»ãƒƒã‚·ãƒ§ãƒ³ã‚’é–‹å§‹ã—ã¾ã™ã€‚');
     }else{
-        print('ƒZƒbƒVƒ‡ƒ“‚ÍŠJŽn‚µ‚Ä‚¢‚Ü‚·B<br>');
-        print('ƒZƒbƒVƒ‡ƒ“ID‚Í '.$_COOKIE["PHPSESSID"].' ‚Å‚·B');
+        print('ã‚»ãƒƒã‚·ãƒ§ãƒ³ã¯é–‹å§‹ã—ã¦ã„ã¾ã™ã€‚<br>');
+        print('ã‚»ãƒƒã‚·ãƒ§ãƒ³IDã¯ '.$_COOKIE["PHPSESSID"].' ã§ã™ã€‚');
     }
 
 ?>
