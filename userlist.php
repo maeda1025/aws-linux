@@ -11,10 +11,10 @@
                         $host = gethostname();
                         echo "<p>Host-Name : $host</p>";
 
-			$DB_HOST = 'jtpedu-lab-db.cimjcl6wbeqk.ap-northeast-1.rds.amazonaws.com:3306';
-			$DB_USER = 'dbadmin';
-			$DB_PASS = 'JTPedudb1!';
-			$DB_NAME = 'jtpedulabdb';
+			$DB_HOST = $_SERVER['DBHOST'];
+			$DB_USER = $_SERVER['DBUSER'];
+			$DB_PASS = $_SERVER['DBPASS'];
+			$DB_NAME = $_SERVER['DBNAME'];
 
 			connect_db($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME);
 			display_table_data('users');
@@ -80,8 +80,8 @@
 
                 ?>
 
-                <a href="https://www.jtpedu-lab.com">To:index(S3)</a><br>
-                <a href="https://webapp.jtpedu-lab.com">To:Application-Server(EC2)</a><br>
-                <a href="https:/userlist.php">To:User-List(PHP)</a><br>
+                <a href="http://www.jtpedu-lab.com">To:index(S3)</a><br>
+                <a href="http://webapp.jtpedu-lab.com">To:Application-Server(EC2)</a><br>
+                <a href="./userlist.php">To:User-List(PHP)</a><br>
         </body>
 </html>
