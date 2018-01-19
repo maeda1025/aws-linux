@@ -1,4 +1,5 @@
 ﻿<?php
+    session_name("login");
     session_start();
 ?>
 
@@ -8,12 +9,12 @@
 
 <?php
 
-    if (!isset($_COOKIE["PHPSESSID"])){
+    if (!isset($_COOKIE["login"])){
         print('初回の訪問です。セッションを開始します。');
 
     }else{
         print('セッションは開始しています。<br>');
-        print('セッションIDは '.$_COOKIE["PHPSESSID"].' です。');
+        print('セッションIDは '.$_COOKIE["login"].' です。');
     }
 
 ?>

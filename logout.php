@@ -9,14 +9,14 @@
 <?php
 
     print('セッションIDを表示します。<br>');
-    print($_COOKIE["PHPSESSID"].'<br>');
+    print($_COOKIE["login"].'<br>');
 
     print('<p>ログアウトしました。</p>');
 
     $_SESSION = array();
 
-    if (isset($_COOKIE["PHPSESSID"])) {
-        setcookie("PHPSESSID", '', time() - 1800, '/');
+    if (isset($_COOKIE["login"])) {
+        setcookie("login", '', time() - 1800, '/');
     }
 
     session_destroy();
