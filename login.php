@@ -8,12 +8,12 @@
 
 <?php
 
-    if (!isset($_SESSION["login"])){
+    if (!isset($_SESSION)){
         print('初回の訪問です。セッションを開始します。');
 
     }else{
         print('セッションは開始しています。<br>');
-        print('セッションIDは '.$_SESSION["login"].' です。');
+        print('セッションIDは '.$_SESSION.' です。');
     }
 
 ?>
