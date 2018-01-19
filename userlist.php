@@ -2,6 +2,7 @@
 <html lang="ja">
         <head>
                 <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="https://www.jtpedu-lab.com/css/common.css" media="all">
 		<title>EC2 Instance / PHP</title>
         </head>
         <body>
