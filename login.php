@@ -9,7 +9,7 @@
 
 <?php
  	print $_SERVER['SERVER_ADDR'];
-	print <br>;
+	print "<br>";
 
     if (!isset($_COOKIE["login"])){
         print('初回の訪問です。セッションを開始します。');
