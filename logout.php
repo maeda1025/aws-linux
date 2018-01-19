@@ -7,14 +7,11 @@
 <body>
 
 <?php
-    print('セッション変数の一覧を表示します。<br>');
-    print_r($_SESSION);
-    print('<br>');
 
     print('セッションIDを表示します。<br>');
     print($_COOKIE["PHPSESSID"].'<br>');
 
-    print('<p>ログアウトします</p>');
+    print('<p>ログアウトしました。</p>');
 
     $_SESSION = array();
 
