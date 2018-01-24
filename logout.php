@@ -10,10 +10,10 @@
 	print $_SERVER['SERVER_ADDR'];
 	print "<br>";
 
-    print('セッションIDを表示します。<br>');
-    print($_COOKIE["login"].'<br>');
+    print('<p>ログインID：');
+    print($_COOKIE["login"].' は');
 
-    print('<p>ログアウトしました。</p>');
+    print('ログアウトしました。</p>');
 
     $_SESSION = array();
 

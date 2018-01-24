@@ -12,16 +12,17 @@
 	print "<br>";
 
     if (!isset($_COOKIE["login"])){
-        print('初回の訪問です。セッションを開始します。');
+        print('ログインしてください。');
 
     }else{
-        print('セッションは開始しています。<br>');
-        print('セッションIDは '.$_COOKIE["login"].' です。');
+        print('ログインしています。<br>');
+        print('ログインIDは '.$_COOKIE["login"].' です。');
     }
 
 ?>
 
 <p>
+<a href="./login.php">ログインする</a>
 <a href="./logout.php">ログアウトする</a>
 </p>
 
