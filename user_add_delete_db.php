@@ -21,7 +21,7 @@ if(!$username == ""){
 }
 
 elseif(!$delete_username = ""){
-	delete_data('users','username',$delete_name);
+	delete_data('users','username',$delete_username);
 }
 //disconnect_db($link);
   $close_flag = mysql_close($link);

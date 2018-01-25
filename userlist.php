@@ -25,19 +25,17 @@
 	?>
 
 	<br>
-	<p>Add User:</p>
-	<br>
+	<b>Add User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<b>ID:</b>
+		<p>ID:</p>
 		<input type="text" name="userid" value="" size="25">
-		<b>Name:</b>
+		<p>Name:</p>
 		<input type="text" name="username" value="" size="10">
 		<input type="submit" value="Submit" />
 	</form>
-	<br>
-	<p>Delete User:</p>
+	<b>Delete User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<b>Name:</b>
+		<p>Name:</p>
 		<input type="text" name="delete_username" value="" size="10">
 		<input type="submit" value="Submit" />
 	</form>
