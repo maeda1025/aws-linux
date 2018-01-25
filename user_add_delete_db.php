@@ -5,11 +5,11 @@ require_once 'functions_db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_id = htmlspecialchars($_POST["user_id"], ENT_QUOTES);
         $user_name = htmlspecialchars($_POST["user_name"], ENT_QUOTES);
-	$delete_username = htmlspecialchars($_POST["delete_username"], ENT_QUOTES);
+	$delete_user_id = htmlspecialchars($_POST["delete_user_id"], ENT_QUOTES);
     }
 
 else {
-	echo "error";
+	echo "post_error";
 	exit(1);
 }
 //-----------------------------------------------------------
@@ -20,12 +20,12 @@ if(!$username == ""){
 	insert_data('users','user_id',$user_id,'user_name',$user_name);
 }
 
-else if(!$delete_username == ""){
-	delete_data('users','user_name',$delete_username);
+else if(!$delete_user_id == ""){
+	delete_data('users','user_id',$delete_user_id);
 }
 
 else{
-	echo "error";
+	echo "query_error";
 	exit(1);
 }
   $close_flag = mysql_close($link);

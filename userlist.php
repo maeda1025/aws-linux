@@ -29,8 +29,8 @@
 	<br>
 	<b>Delete User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<a>Name:</a>
-		<input type="text" name="delete_username" value="" size="10">
+		<a>UserID:</a>
+		<input type="text" name="delete_user_id" value="" size="10">
 		<input type="submit" value="Delete" />
 	</form>
 
