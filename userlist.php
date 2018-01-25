@@ -23,14 +23,14 @@
 			connect_db($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME);
 		?>
 
-			<b>Å°Instructor í«â¡:</b>
+			<b>Add User:</b>
 			<br>
 			<form action="insert_data.php" method="post" value=""/>
-				<b>ñºëO:</b>
+				<b>ID:</b>
 				<input type="text" name="userid" value="" size="25">
-				<b>Team:</b>
+				<b>Name:</b>
 				<input type="text" name="username" value="" size="10">
-				<input type="submit" value="ëóêM" />
+				<input type="submit" value="Submit" />
 			</form>
 
 		<?php
