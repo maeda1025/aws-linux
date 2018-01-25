@@ -27,15 +27,15 @@
 	<br>
 	<b>Add User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<p>ID:</p>
+		<a>ID:</a>
 		<input type="text" name="userid" value="" size="25">
-		<p>Name:</p>
+		<a>Name:</a>
 		<input type="text" name="username" value="" size="10">
 		<input type="submit" value="Submit" />
 	</form>
 	<b>Delete User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<p>Name:</p>
+		<h1>Name:</h1>
 		<input type="text" name="delete_username" value="" size="10">
 		<input type="submit" value="Submit" />
 	</form>
