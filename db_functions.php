@@ -54,4 +54,10 @@
 	   echo "</table><br>";
 	  }
 
+	function insert_data($table,$column1,$value1,$column2,$value2){
+		$sql_insert = "INSERT INTO $table ($column1,$column2) VALUES ('$value1','$value2') ";
+		//  print $sql_insert ."<br>";
+		$result_flag = mysql_query($sql_insert);
+	}
+
 ?>
