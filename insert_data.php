@@ -18,7 +18,7 @@ $DB_PASS = $_SERVER['DBPASS'];
 $DB_NAME = $_SERVER['DBNAME'];
 
 connect_db($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME);
-insert_data('users','userid','$userid','username','$username');
+insert_data('users','userid',$userid,'username',$username);
 
 //disconnect_db($link);
   $close_flag = mysql_close($link);
