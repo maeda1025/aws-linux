@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<p>User List</p>
+	<b>User List</b>
 
 	<?php
 		print $_SERVER['SERVER_ADDR'];
@@ -35,7 +35,7 @@
 	</form>
 	<b>Delete User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<h1>Name:</h1>
+		<a>Name:</a>
 		<input type="text" name="delete_username" value="" size="10">
 		<input type="submit" value="Submit" />
 	</form>

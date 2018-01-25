@@ -5,7 +5,7 @@ require_once 'functions_db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $userid = htmlspecialchars($_POST["userid"], ENT_QUOTES);
         $username = htmlspecialchars($_POST["username"], ENT_QUOTES);
-	$delet_username = htmlspecialchars($_POST["delete_username"], ENT_QUOTES);
+	$delete_username = htmlspecialchars($_POST["delete_username"], ENT_QUOTES);
     }
 
 else {
