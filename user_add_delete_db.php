@@ -20,7 +20,7 @@ if(!$username == ""){
 	insert_data('users','userid',$userid,'username',$username);
 }
 
-elseif(!$delete_username = ""){
+elseif(!$delete_username == ""){
 	delete_data('users','username',$delete_username);
 }
 
