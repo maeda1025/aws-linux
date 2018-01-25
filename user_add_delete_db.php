@@ -16,7 +16,7 @@ else {
 
 connect_db($_SERVER['DBHOST'],$_SERVER['DBUSER'],$_SERVER['DBPASS'],$_SERVER['DBNAME']);
 
-if(!$username == ""){
+if(!$user_name == ""){
 	insert_data('users','user_id',$user_id,'user_name',$user_name);
 }
 
