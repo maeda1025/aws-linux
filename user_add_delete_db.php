@@ -23,6 +23,11 @@ if(!$username == ""){
 elseif(!$delete_username = ""){
 	delete_data('users','username',$delete_username);
 }
+
+else{
+	echo "error";
+	exit(1);
+}
 //disconnect_db($link);
   $close_flag = mysql_close($link);
 //----------------------------------------------------------

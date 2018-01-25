@@ -33,6 +33,7 @@
 		<input type="text" name="username" value="" size="10">
 		<input type="submit" value="Submit" />
 	</form>
+	<br>
 	<b>Delete User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
 		<a>Name:</a>
