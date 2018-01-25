@@ -33,6 +33,6 @@ else{
 //----------------------------------------------------------
 
 
- header("Location:./userlist.php",true,303);
+// header("Location:./userlist.php",true,303);
 
 ?>
