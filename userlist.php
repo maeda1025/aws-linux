@@ -15,13 +15,6 @@
 
 	<?php
 		print $_SERVER['SERVER_ADDR'];
-
-		$DB_HOST = $_SERVER['DBHOST'];
-		$DB_USER = $_SERVER['DBUSER'];
-		$DB_PASS = $_SERVER['DBPASS'];
-		$DB_NAME = $_SERVER['DBNAME'];
-
-		connect_db($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME);
 	?>
 
 	<br>
@@ -31,17 +24,18 @@
 		<input type="text" name="userid" value="" size="25">
 		<a>Name:</a>
 		<input type="text" name="username" value="" size="10">
-		<input type="submit" value="Submit" />
+		<input type="submit" value="Add" />
 	</form>
 	<br>
 	<b>Delete User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
 		<a>Name:</a>
 		<input type="text" name="delete_username" value="" size="10">
-		<input type="submit" value="Submit" />
+		<input type="submit" value="Delete" />
 	</form>
 
 	<?php
+		connect_db($_SERVER['DBHOST'],$_SERVER['DBUSER'],$_SERVER['DBPASS'],$_SERVER['DBNAME']);
 		show_db_table('users');
 	?>
 
