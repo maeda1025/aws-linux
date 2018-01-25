@@ -20,8 +20,6 @@
 	<br>
 	<b>Add User:</b>
 	<form action="user_add_delete_db.php" method="post" value=""/>
-		<a>ID:</a>
-		<input type="text" name="user_id" value="" size="25">
 		<a>Name:</a>
 		<input type="text" name="user_name" value="" size="10">
 		<input type="submit" value="Add" />

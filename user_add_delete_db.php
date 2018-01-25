@@ -3,7 +3,6 @@ require_once 'functions_db.php';
 //----------------------------------------------------------
 //POSTŽó‚¯Žæ‚è—p
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $user_id = htmlspecialchars($_POST["user_id"], ENT_QUOTES);
         $user_name = htmlspecialchars($_POST["user_name"], ENT_QUOTES);
 	$delete_user_id = htmlspecialchars($_POST["delete_user_id"], ENT_QUOTES);
     }
@@ -17,7 +16,7 @@ else {
 connect_db($_SERVER['DBHOST'],$_SERVER['DBUSER'],$_SERVER['DBPASS'],$_SERVER['DBNAME']);
 
 if(!$user_name == ""){
-	insert_data('users','user_id',$user_id,'user_name',$user_name);
+	insert_data('users','user_name',$user_name);
 }
 
 else if(!$delete_user_id == ""){
