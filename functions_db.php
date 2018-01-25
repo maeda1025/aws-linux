@@ -60,7 +60,7 @@
 	}
 
 	function delete_data($table,$column,$value){
-		$sql_delete = "DELETE FROM $table WHERE $column $value";
+		$sql_delete = "DELETE FROM $table WHERE $column='$value'";
 		$result_flag = mysql_query($sql_delete);
 	}
 
