@@ -21,6 +21,7 @@
 			$DB_NAME = $_SERVER['DBNAME'];
 
 			connect_db($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME);
+		?>
 
 			<b>Å°Instructor í«â¡:</b>
 			<br>
@@ -32,6 +33,7 @@
 				<input type="submit" value="ëóêM" />
 			</form>
 
+		<?php
 			show_db_table('users');
                 ?>
 
