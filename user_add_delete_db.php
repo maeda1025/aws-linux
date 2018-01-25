@@ -14,14 +14,21 @@ else {
 }
 //-----------------------------------------------------------
 
+
+print $userid;
+print $username;
+print $delete_username;
+
 connect_db($_SERVER['DBHOST'],$_SERVER['DBUSER'],$_SERVER['DBPASS'],$_SERVER['DBNAME']);
 
 if(!$username == ""){
 	insert_data('users','userid',$userid,'username',$username);
+print "if";
 }
 
 else if(!$delete_username == ""){
 	delete_data('users','username',$delete_username);
+print "else if";
 }
 
 else{
