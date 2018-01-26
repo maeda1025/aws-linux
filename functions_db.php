@@ -60,6 +60,8 @@
 	function show_db_table_specific($table,$column1,$column2){
 	//Fileds•\Ž¦
 	 $i = 0;
+echo $column1;
+echo $column2;
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
@@ -69,7 +71,8 @@
 	 }
 	 echo '</tr>';
 
-	 $table_data = mysql_query("SELECT ".$column1.",".$column2." FROM $table");
+	 $table_data = mysql_query("SELECT ".$column1.",".$column2." FROM ".$table);
+echo $table_data;
 	 while ($data = mysql_fetch_array($table_data, MYSQL_ASSOC)) {
 	     $datas[] = $data;
 	 }
