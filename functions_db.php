@@ -63,9 +63,9 @@
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
-	 for($i=0;$i=>2;$i++){
-	     $fields[] =  $filed[$columns1,$column2];
-	     echo "<th>".$fields[$i]."</th>";
+	 $filed[$columns1,$column2];
+	 foreach($field as $fields){
+	     echo "<th>".$fields."</th>";
 	 }
 	 echo '</tr>';
 
