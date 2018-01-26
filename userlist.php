@@ -22,6 +22,7 @@
 	<form action="user_add_delete_db.php" method="post" value=""/>
 		<a>Name:</a>
 		<input type="text" name="user_name" value="" size="10">
+		<input type="text" name="user_password" value="" size="10">
 		<input type="submit" value="Add" />
 	</form>
 	<br>
@@ -34,7 +35,7 @@
 
 	<?php
 		connect_db($_SERVER['DBHOST'],$_SERVER['DBUSER'],$_SERVER['DBPASS'],$_SERVER['DBNAME']);
-		show_db_table('users');
+		show_db_table_specific('users','user_id','user_name');
 	?>
 
 	<a href="https://www.jtpedu-lab.com">To:index(S3)</a><br>
