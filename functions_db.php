@@ -63,7 +63,7 @@
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
-	 for($i=0,$i=>2,$i++) {
+	 for($i=0;$i=>2;$i++){
 	     $fields[] =  $filed[$columns1,$column2];
 	     echo "<th>".$fields[$i]."</th>";
 	 }
