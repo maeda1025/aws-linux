@@ -57,13 +57,13 @@
 	  }
 
 //DB(Table)内、特定columnデータ表形式で表示
-	function show_db_table_specific($table,$column1,$columns2){
+	function show_db_table_specific($table,$column1,$column2){
 	//Fileds表示
 	 $i = 0;
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
-	 $filed= array($columns1,$column2);
+	 $filed= array($column1,$column2);
 	 foreach($field as $fields){
 	     echo "<th>".$fields."</th>";
 	 }
