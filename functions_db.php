@@ -63,7 +63,7 @@
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
-	 $filed= ($columns1,$column2);
+	 $filed= array($columns1,$column2);
 	 foreach($field as $fields){
 	     echo "<th>".$fields."</th>";
 	 }
