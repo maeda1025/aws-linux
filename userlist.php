@@ -35,7 +35,8 @@
 
 	<?php
 		connect_db($_SERVER['DBHOST'],$_SERVER['DBUSER'],$_SERVER['DBPASS'],$_SERVER['DBNAME']);
-		show_db_table_all('users','user_id','user_name');
+//		show_db_table_all('users','user_id','user_name');
+		show_db_table_all('users');
 	?>
 
 	<a href="https://www.jtpedu-lab.com">To:index(S3)</a><br>
