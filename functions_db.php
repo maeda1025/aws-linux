@@ -63,8 +63,10 @@
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
-	 echo '<th>'.$column1.'</th>';
-	 echo '<th>'.$column2.'</th>';
+	 for($i=0,$i=>2,$i++) {
+	     $fields[] =  $filed[$columns1,$column2];
+	     echo "<th>".$fields[$i]."</th>";
+	 }
 	 echo '</tr>';
 
 	 $table_data = mysql_query("SELECT ".$column1.$column2." FROM $table");
