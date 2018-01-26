@@ -67,7 +67,7 @@
 	 echo '<th>'.$column2.'</th>';
 	 echo '</tr>';
 
-	 $table_data = mysql_query("SELECT $column1,$column2 FROM $table");
+	 $table_data = mysql_query("SELECT ".$column1.$column2." FROM $table");
 	 while ($data = mysql_fetch_array($table_data, MYSQL_ASSOC)) {
 	     $datas[] = $data;
 	 }
