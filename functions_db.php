@@ -60,19 +60,14 @@
 	function show_db_table_specific($table,$column1,$column2){
 	//Fileds•\Ž¦
 	 $i = 0;
-echo $column1;
-echo $column2;
 	 echo "</font>"."<table border='1'>";
 	 echo '<caption>'.$table.'</caption>';
 	 echo '<tr>';
-	 $filed= array($column1,$column2);
-	 foreach($field as $fields){
-	     echo "<th>".$fields."</th>";
-	 }
+	 echo "<th>".$column1."</th>";
+	 echo "<th>".$column2."</th>";
 	 echo '</tr>';
 
-	 $table_data = mysql_query("SELECT ".$column1.",".$column2." FROM ".$table);
-echo $table_data;
+	 $table_data = mysql_query("SELECT $column1,$column2 FROM $table");
 	 while ($data = mysql_fetch_array($table_data, MYSQL_ASSOC)) {
 	     $datas[] = $data;
 	 }
